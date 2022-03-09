@@ -15,7 +15,7 @@ public class AllTask {
     public String assigneto;
     public String assignedate;    
     public String duedate;
-    public String status;
+    public String status="NotStarted";
     
     public long getId() {
         return id;
