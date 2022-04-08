@@ -42,7 +42,9 @@ public class AllTaskServiceImp implements AllTaskService {
                     s.setDescription(alltask.getDescription());
                     s.setAssigneto(alltask.getAssigneto());
                     s.setAssignedate(alltask.getAssignedate());
-                    s.setDuedate(alltask.getDuedate());
+                    s.setDuedate(alltask.getDuedate());                    
+                    s.setStatus(alltask.getStatus());
+                    
                     return alltaskrepository.save(s);
                 })
                 .orElseGet(() -> {
